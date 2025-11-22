@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+body,html{
+  /* overflow-x: hidden; */
+  background-color: #FFFFFF;
+
+}
+
+@theme {
+    --font-montserrat: "Montserrat", sans-serif;
+      --font-times: "Times New Roman", serif;
+        --font-poppins: "Poppins", sans-serif;
+
+
+
+}
+
+
+
+
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.scroll-content {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 12s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+
